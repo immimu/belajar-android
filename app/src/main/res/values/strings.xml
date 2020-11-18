@@ -4,4 +4,6 @@
     <string name="text_subtitle_textview">Bekerja dengan textview</string>
     <string name="text_button">Button</string>
     <string name="text_option_menu">Option menu</string>
+    <string name="text_subtitle_button">Bekerja dengan button</string>
+    <string name="text_subtitle_option_menu">Bekerja degan option menu</string>
 </resources>

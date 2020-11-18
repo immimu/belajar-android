@@ -29,14 +29,14 @@ class MainActivity : AppCompatActivity(), MenuListener {
             MenuItem(
                 2,
                 getString(R.string.text_button),
-                getString(R.string.text_subtitle_textview)
+                getString(R.string.text_subtitle_button)
             )
         )
         listMenu.add(
             MenuItem(
                 3,
                 getString(R.string.text_option_menu),
-                getString(R.string.text_subtitle_textview)
+                getString(R.string.text_subtitle_option_menu)
             )
         )
 
