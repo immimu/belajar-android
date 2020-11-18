@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.menu_item.view.*
  * Visit me on github.com @immimu
  * 18 November 2020
  */
-class MenuItemViewHolder(itemView: View, val listener: MenuListener) :
+class MenuItemViewHolder(itemView: View, private val listener: MenuListener) :
     RecyclerView.ViewHolder(itemView) {
 
     fun bind(menuItem: MenuItem) {
