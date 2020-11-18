@@ -1,12 +1,13 @@
 package com.immimu.belajarandroid
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.immimu.belajarandroid.adapter.MenuAdapter
 import com.immimu.belajarandroid.entity.MenuItem
 import com.immimu.belajarandroid.listener.MenuListener
+import com.immimu.belajarandroid.ui.TextViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MenuListener {
@@ -50,6 +51,6 @@ class MainActivity : AppCompatActivity(), MenuListener {
     }
 
     override fun onMenuClicked(menuItem: MenuItem) {
-        Toast.makeText(this, menuItem.title, Toast.LENGTH_SHORT).show()
+        startActivity(Intent(this, TextViewActivity::class.java))
     }
 }
