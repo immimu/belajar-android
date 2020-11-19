@@ -6,4 +6,8 @@
     <string name="text_option_menu">Option menu</string>
     <string name="text_subtitle_button">Bekerja dengan button</string>
     <string name="text_subtitle_option_menu">Bekerja degan option menu</string>
+    <string name="button_1">Button 1</string>
+    <string name="outline_button">outline button</string>
+    <string name="text_text_button">Text Button</string>
+    <string name="icon_button">icon button</string>
 </resources>

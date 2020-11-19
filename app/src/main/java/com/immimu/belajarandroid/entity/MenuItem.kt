@@ -9,4 +9,4 @@ import kotlinx.android.parcel.Parcelize
  * 18 November 2020
  */
 @Parcelize
-data class MenuItem(val int: Int, val title: String, val subtitle: String) : Parcelable
+data class MenuItem(val id: Int, val title: String, val subtitle: String) : Parcelable

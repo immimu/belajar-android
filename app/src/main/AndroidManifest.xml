@@ -18,7 +18,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.TextViewActivity" />
+        <activity
+            android:name=".ui.TextViewActivity"
+            android:label="@string/text_textview" />
+
+        <activity
+            android:name=".ui.ButtonActivity"
+            android:label="@string/text_button" />
 
         <meta-data
             android:name="preloaded_fonts"

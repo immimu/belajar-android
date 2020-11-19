@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.immimu.belajarandroid.adapter.MenuAdapter
 import com.immimu.belajarandroid.entity.MenuItem
 import com.immimu.belajarandroid.listener.MenuListener
+import com.immimu.belajarandroid.ui.ButtonActivity
 import com.immimu.belajarandroid.ui.TextViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -51,6 +52,11 @@ class MainActivity : AppCompatActivity(), MenuListener {
     }
 
     override fun onMenuClicked(menuItem: MenuItem) {
-        startActivity(Intent(this, TextViewActivity::class.java))
+        val intent = when (menuItem.id) {
+            1 -> Intent(this, TextViewActivity::class.java)
+            2 -> Intent(this, ButtonActivity::class.java)
+            else -> Intent(this, TextViewActivity::class.java)
+        }
+        startActivity(intent)
     }
 }
