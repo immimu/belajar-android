@@ -17,14 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.TextViewActivity"
             android:label="@string/text_textview" />
-
         <activity
             android:name=".ui.ButtonActivity"
             android:label="@string/text_button" />
+
+        <activity
+            android:name=".ui.MenuActivity"
+            android:label="@string/text_option_menu" />
 
         <meta-data
             android:name="preloaded_fonts"

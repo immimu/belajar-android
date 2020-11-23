@@ -8,6 +8,7 @@ import com.immimu.belajarandroid.adapter.MenuAdapter
 import com.immimu.belajarandroid.entity.MenuItem
 import com.immimu.belajarandroid.listener.MenuListener
 import com.immimu.belajarandroid.ui.ButtonActivity
+import com.immimu.belajarandroid.ui.MenuActivity
 import com.immimu.belajarandroid.ui.TextViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity(), MenuListener {
         val intent = when (menuItem.id) {
             1 -> Intent(this, TextViewActivity::class.java)
             2 -> Intent(this, ButtonActivity::class.java)
-            else -> Intent(this, TextViewActivity::class.java)
+            else -> Intent(this, MenuActivity::class.java)
         }
         startActivity(intent)
     }

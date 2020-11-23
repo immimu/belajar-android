@@ -10,4 +10,7 @@
     <string name="outline_button">outline button</string>
     <string name="text_text_button">Text Button</string>
     <string name="icon_button">icon button</string>
+    <string name="text_menu_profile">Profile</string>
+    <string name="text_menu_likes">Likes</string>
+    <string name="text_menu_search">Search</string>
 </resources>
