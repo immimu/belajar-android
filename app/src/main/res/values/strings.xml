@@ -13,4 +13,9 @@
     <string name="text_menu_profile">Profile</string>
     <string name="text_menu_likes">Likes</string>
     <string name="text_menu_search">Search</string>
+    <string name="text_edittext_menu">EditText</string>
+    <string name="text_subtitle_edittext_menu">Bekerja dengan EditText</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Login</string>
 </resources>

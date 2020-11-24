@@ -8,6 +8,7 @@ import com.immimu.belajarandroid.adapter.MenuAdapter
 import com.immimu.belajarandroid.entity.MenuItem
 import com.immimu.belajarandroid.listener.MenuListener
 import com.immimu.belajarandroid.ui.ButtonActivity
+import com.immimu.belajarandroid.ui.EditTextActivity
 import com.immimu.belajarandroid.ui.MenuActivity
 import com.immimu.belajarandroid.ui.TextViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -43,6 +44,14 @@ class MainActivity : AppCompatActivity(), MenuListener {
             )
         )
 
+        listMenu.add(
+            MenuItem(
+                4,
+                getString(R.string.text_edittext_menu),
+                getString(R.string.text_subtitle_edittext_menu)
+            )
+        )
+
         menuRecyclerView.apply {
             adapter = menuAdapter
             layoutManager = LinearLayoutManager(this@MainActivity)
@@ -56,7 +65,8 @@ class MainActivity : AppCompatActivity(), MenuListener {
         val intent = when (menuItem.id) {
             1 -> Intent(this, TextViewActivity::class.java)
             2 -> Intent(this, ButtonActivity::class.java)
-            else -> Intent(this, MenuActivity::class.java)
+            3 -> Intent(this, MenuActivity::class.java)
+            else -> Intent(this, EditTextActivity::class.java)
         }
         startActivity(intent)
     }
