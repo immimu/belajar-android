@@ -22,4 +22,10 @@
     <string name="text_menu_delete">Delete</string>
     <string name="text_menu_favorite">Favorite</string>
     <string name="button_more">More</string>
+    <string name="text_dialog_menu">Dialog</string>
+    <string name="text_subtitle_dialog_menu">Confirmation dialog, input dialog</string>
+    <string name="title_delete_confirm">Delete confirmation</string>
+    <string name="message_delete_confirmation">Are you sure wanna delete this?</string>
+    <string name="button_yes">yes</string>
+    <string name="button_cancel">cancel</string>
 </resources>

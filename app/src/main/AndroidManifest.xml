@@ -26,10 +26,12 @@
         <activity
             android:name=".ui.MenuActivity"
             android:label="@string/text_option_menu" />
-
         <activity
             android:name=".ui.EditTextActivity"
             android:label="@string/text_edittext_menu" />
+        <activity
+            android:name=".ui.DialogActivity"
+            android:label="@string/text_dialog_menu" />
 
         <meta-data
             android:name="preloaded_fonts"

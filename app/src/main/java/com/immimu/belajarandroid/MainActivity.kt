@@ -7,10 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.immimu.belajarandroid.adapter.MenuAdapter
 import com.immimu.belajarandroid.entity.MenuItem
 import com.immimu.belajarandroid.listener.MenuListener
-import com.immimu.belajarandroid.ui.ButtonActivity
-import com.immimu.belajarandroid.ui.EditTextActivity
-import com.immimu.belajarandroid.ui.MenuActivity
-import com.immimu.belajarandroid.ui.TextViewActivity
+import com.immimu.belajarandroid.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MenuListener {
@@ -65,6 +62,13 @@ class MainActivity : AppCompatActivity(), MenuListener {
                     getString(R.string.text_subtitle_edittext_menu)
                 )
             )
+            add(
+                MenuItem(
+                    MENU_ID_DIALOG,
+                    getString(R.string.text_dialog_menu),
+                    getString(R.string.text_subtitle_dialog_menu)
+                )
+            )
         }
 
     }
@@ -75,6 +79,7 @@ class MainActivity : AppCompatActivity(), MenuListener {
             MENU_ID_BUTTON -> Intent(this, ButtonActivity::class.java)
             MENU_ID_MENU -> Intent(this, MenuActivity::class.java)
             MENU_ID_EDITTEXT -> Intent(this, EditTextActivity::class.java)
+            MENU_ID_DIALOG -> Intent(this, DialogActivity::class.java)
             else -> null
         }
         startActivity(intent)
@@ -85,5 +90,6 @@ class MainActivity : AppCompatActivity(), MenuListener {
         private const val MENU_ID_BUTTON = 2
         private const val MENU_ID_MENU = 3
         private const val MENU_ID_EDITTEXT = 4
+        private const val MENU_ID_DIALOG = 5
     }
 }

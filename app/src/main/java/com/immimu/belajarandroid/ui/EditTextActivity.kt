@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.immimu.belajarandroid.R
 import kotlinx.android.synthetic.main.activity_edit_text.*
 
+const val TAG = "Belajar Android "
+
 class EditTextActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +21,5 @@ class EditTextActivity : AppCompatActivity() {
             Log.i(TAG, "Email : $valueEmail")
             Log.i(TAG, "Password : $valuePassword")
         }
-    }
-
-    companion object {
-        private const val TAG = "Belajar Android "
     }
 }
