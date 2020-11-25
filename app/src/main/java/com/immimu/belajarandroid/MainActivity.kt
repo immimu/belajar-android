@@ -22,35 +22,8 @@ class MainActivity : AppCompatActivity(), MenuListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        listMenu.add(
-            MenuItem(
-                1,
-                getString(R.string.text_textview),
-                getString(R.string.text_subtitle_textview)
-            )
-        )
-        listMenu.add(
-            MenuItem(
-                2,
-                getString(R.string.text_button),
-                getString(R.string.text_subtitle_button)
-            )
-        )
-        listMenu.add(
-            MenuItem(
-                3,
-                getString(R.string.text_option_menu),
-                getString(R.string.text_subtitle_option_menu)
-            )
-        )
+        generateMenu()
 
-        listMenu.add(
-            MenuItem(
-                4,
-                getString(R.string.text_edittext_menu),
-                getString(R.string.text_subtitle_edittext_menu)
-            )
-        )
 
         menuRecyclerView.apply {
             adapter = menuAdapter
@@ -61,13 +34,56 @@ class MainActivity : AppCompatActivity(), MenuListener {
         menuAdapter.notifyDataSetChanged()
     }
 
+    private fun generateMenu() {
+        listMenu.apply {
+            add(
+                MenuItem(
+                    MENU_ID_TEXTVIEW,
+                    getString(R.string.text_textview),
+                    getString(R.string.text_subtitle_textview)
+                )
+            )
+            add(
+                MenuItem(
+                    MENU_ID_BUTTON,
+                    getString(R.string.text_button),
+                    getString(R.string.text_subtitle_button)
+                )
+            )
+            add(
+                MenuItem(
+                    MENU_ID_MENU,
+                    getString(R.string.text_option_menu),
+                    getString(R.string.text_subtitle_option_menu)
+                )
+            )
+
+            add(
+                MenuItem(
+                    MENU_ID_EDITTEXT,
+                    getString(R.string.text_edittext_menu),
+                    getString(R.string.text_subtitle_edittext_menu)
+                )
+            )
+        }
+
+    }
+
     override fun onMenuClicked(menuItem: MenuItem) {
         val intent = when (menuItem.id) {
-            1 -> Intent(this, TextViewActivity::class.java)
-            2 -> Intent(this, ButtonActivity::class.java)
-            3 -> Intent(this, MenuActivity::class.java)
-            else -> Intent(this, EditTextActivity::class.java)
+            MENU_ID_TEXTVIEW -> Intent(this, TextViewActivity::class.java)
+            MENU_ID_BUTTON -> Intent(this, ButtonActivity::class.java)
+            MENU_ID_MENU -> Intent(this, MenuActivity::class.java)
+            MENU_ID_EDITTEXT -> Intent(this, EditTextActivity::class.java)
+            else -> null
         }
         startActivity(intent)
+    }
+
+    companion object {
+        private const val MENU_ID_TEXTVIEW = 1
+        private const val MENU_ID_BUTTON = 2
+        private const val MENU_ID_MENU = 3
+        private const val MENU_ID_EDITTEXT = 4
     }
 }
