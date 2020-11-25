@@ -18,4 +18,8 @@
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="button_login">Login</string>
+    <string name="text_menu_edit">Edit</string>
+    <string name="text_menu_delete">Delete</string>
+    <string name="text_menu_favorite">Favorite</string>
+    <string name="button_more">More</string>
 </resources>
