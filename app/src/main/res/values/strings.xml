@@ -28,4 +28,9 @@
     <string name="message_delete_confirmation">Are you sure wanna delete this?</string>
     <string name="button_yes">yes</string>
     <string name="button_cancel">cancel</string>
+    <string name="text_input_your_name">Input your name</string>
+    <string name="title_input_your_name">Input your name</string>
+    <string name="text_name">Name</string>
+    <string name="button_submit">Submit</string>
+    <string name="hint_name">Name</string>
 </resources>
