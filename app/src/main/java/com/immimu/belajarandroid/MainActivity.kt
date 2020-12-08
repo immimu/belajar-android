@@ -69,6 +69,13 @@ class MainActivity : AppCompatActivity(), MenuListener {
                     getString(R.string.text_subtitle_dialog_menu)
                 )
             )
+            add(
+                MenuItem(
+                    MENU_ID_AUTO_COMPLETE_TEXTVIEW,
+                    getString(R.string.text_autocomplete_menu),
+                    getString(R.string.text_subtitle_autocomplete_menu)
+                )
+            )
         }
 
     }
@@ -80,6 +87,7 @@ class MainActivity : AppCompatActivity(), MenuListener {
             MENU_ID_MENU -> Intent(this, MenuActivity::class.java)
             MENU_ID_EDITTEXT -> Intent(this, EditTextActivity::class.java)
             MENU_ID_DIALOG -> Intent(this, DialogActivity::class.java)
+            MENU_ID_AUTO_COMPLETE_TEXTVIEW -> Intent(this, AutoCompleteActivity::class.java)
             else -> null
         }
         startActivity(intent)
@@ -91,5 +99,6 @@ class MainActivity : AppCompatActivity(), MenuListener {
         private const val MENU_ID_MENU = 3
         private const val MENU_ID_EDITTEXT = 4
         private const val MENU_ID_DIALOG = 5
+        private const val MENU_ID_AUTO_COMPLETE_TEXTVIEW = 6
     }
 }

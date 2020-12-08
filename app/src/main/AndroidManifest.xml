@@ -33,6 +33,10 @@
             android:name=".ui.DialogActivity"
             android:label="@string/text_dialog_menu" />
 
+        <activity
+            android:name=".ui.AutoCompleteActivity"
+            android:label="@string/text_autocomplete_menu" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -33,4 +33,7 @@
     <string name="text_name">Name</string>
     <string name="button_submit">Submit</string>
     <string name="hint_name">Name</string>
+    <string name="text_autocomplete_menu">Auto Complete Textview</string>
+    <string name="text_subtitle_autocomplete_menu">Implement autocomplete textview</string>
+    <string name="text_android_name_version">Android name version</string>
 </resources>
